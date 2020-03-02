@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import BookingDate from "./booking/BookingDate";
+import IndividualPosting from "./booking/IndividualPosting";
+import MyBookings from "./booking/MyBookings";
+import MyBooking from "./booking/MyBooking";
 
 export default function App() {
   useEffect(() => {
@@ -15,7 +17,9 @@ export default function App() {
   });
   return (
     <div>
-      <BookingDate />
+      {/* <IndividualPosting /> */}
+      {/* <MyBookings /> */}
+      <MyBooking />
     </div>
   );
 }
