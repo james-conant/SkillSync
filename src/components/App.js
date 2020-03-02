@@ -12,6 +12,5 @@ export default function App() {
         console.log(error);
       });
   });
-  return <div>Hello World</div>;
+  return <div>Hello World!!</div>;
 }
-//alsdkca;egitve
