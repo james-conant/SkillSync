@@ -23,6 +23,7 @@ CREATE TABLE skill (
 CREATE TABLE user_skill (
   user_id INT NOT NULL,
   skill_id INT NOT NULL,
+  role ENUM('mentor', 'mentee'),
   FOREIGN KEY (user_id) REFERENCES user (user_id),
   FOREIGN KEY (skill_id) REFERENCES skill (skill_id)
 );
@@ -70,3 +71,8 @@ CREATE TABLE message (
   to_username INT NOT NULL,
   FOREIGN KEY (to_username) REFERENCES user (user_id)
 );
+
+CREATE TABLE test (
+  likes INT
+);
+INSERT INTO test (likes) VALUES (5);
