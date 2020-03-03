@@ -5,9 +5,10 @@ import useForm from './CustomHooks';
 import FrontPage from "./FrontPage.jsx";
 import UserProfile from "./UserProfile.jsx";
 import LoginPage from "./LoginPage.jsx";
+import NavBar from "./NavBar.jsx";
 
 export default function App() {
-  
+  //submits any input data to the database
   const submit = () => {
     // alert(`${inputs.worldName} has been saved`)
     var info = inputs;
@@ -20,16 +21,18 @@ export default function App() {
       console.error('--> jeepers: ', err);
     })
   }
+
   //initializes the custom form hook
   const {inputs, handleInputChange, handleSubmit} = useForm(submit);
 
-
   return (
       <div>
-        <LoginPage 
+        {/* <LoginPage 
           inputs={inputs}
           handleInputChange={handleInputChange}
-          handleSubmit={handleSubmit}/>
+          handleSubmit={handleSubmit}/> */}
+        <NavBar dot={true}/>
       </div>
     );
+  
 }
