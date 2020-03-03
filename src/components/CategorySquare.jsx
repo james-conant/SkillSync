@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 export default function CategorySquare({name, large}) {
 if (large) {
   return(
