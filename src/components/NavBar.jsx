@@ -14,7 +14,7 @@ export default function NavBar({dot, inputs, handleInputChange, handleSubmit}) {
       <div className="searchBarContainer">
         <img className="navClosed" src="imgs/logos/navBarClosed.png" width="35px"/>
         {dot ? <NotificationDot/> : <></>}
-        
+
         <form onSubmit={handleSubmit}>
         <input
           className="inputText" 
@@ -23,13 +23,33 @@ export default function NavBar({dot, inputs, handleInputChange, handleSubmit}) {
           onChange={handleInputChange}
           value={inputs.searchQuery}
           ></input>
-        <button className="searchButton"><img src="imgs/logos/searchButton.png" width="44px"/></button>
+
+        <button className="searchButton"><img src="imgs/logos/searchButton.png" height="35px"/></button>
         </form>
 
       </div>
       {/* NAVIGATION DRAWER */}
       <div className="navDrawer">
-
+        <span className="navLink">
+          MESSAGES{dot ? <NotificationDot/> : <></>}
+        </span>
+          <hr color="#98C460"/>
+        <span className="navLink">
+        MY BOOKINGS
+        </span>
+          <hr color="#98C460"/>
+        <span className="navLink">
+        MY PROFILE
+        </span>
+          <hr color="#98C460"/>
+        <span className="navLink">
+        NEW POSTING
+        </span>
+          <hr color="#98C460"/>
+        
+        <div className="navDrawerBottom">
+          {/* <hr color="#98C460"/> */}
+        </div>
       </div>
     </div>
 
