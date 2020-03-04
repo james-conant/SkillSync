@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:200,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300&display=swap');
 
 @import url("https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap");
 
@@ -38,6 +38,21 @@ button {
   z-index: 5;
 }
 
+.inputText {
+  width: 50%;
+  height: 41px;
+  background: #E5E5E5;
+  box-shadow: inset 0px 4px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 18px;
+  padding-left: 5px;
+}
 
 
 /* Front Page */
@@ -94,9 +109,32 @@ button {
   border-radius: 4px;
 }
 
-/* notification dot */
+/* top bar */
 .notificationDot:before {
   content: ' \25CF';
   font-size: 30px;
+  left: -20em;
   color: #FF8C5B;
+}
+
+button, .homeButton{
+  display: flexbox;
+  height: 39px;
+  width: 44px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.searchBarContainer {
+  display: flexbox;
+  padding: 8px;
+  padding-bottom: 2px;
+  background: #ffffff;
+}
+
+.navDrawer {
+  background: #ffffff;
+  width: 414px;
+  height: 340px;
 }

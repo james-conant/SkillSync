@@ -61,7 +61,11 @@ export default function App() {
 
   return (
       <div>
-        <NavBar dot={true}/>
+        <NavBar 
+          dot={true}
+          inputs={inputs}
+          handleInputChange={handleInputChange}
+          handleSubmit={handleSubmit}/>
       </div>
     );
   
