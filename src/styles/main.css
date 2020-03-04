@@ -118,7 +118,9 @@ button {
 .notificationDot:before {
   content: ' \25CF';
   vertical-align: 1ex;
-  font-size: 30px;
+  font-size: 28px;
+  margin-left: -15px;
+  margin-top: -15px;
   color: #FF8C5B;
 }
 button, .searchButton{
