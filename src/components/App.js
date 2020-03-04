@@ -25,14 +25,47 @@ export default function App() {
   //initializes the custom form hook
   const {inputs, handleInputChange, handleSubmit} = useForm(submit);
 
+  //ROUTES
+
+    //Navigation Bar -- takes in boolean; whether there's a new message; contains search bar
+      // <NavBar dot={true} />
+
+    //Front Page
+      // <FrontPage />
+  
+    //Messages List
+  
+    //Single Chat
+  
+    //Log In / Sign up, takes in custom form hooks
+      /*<LoginPage 
+        inputs={inputs}
+        handleInputChange={handleInputChange}
+        handleSubmit={handleSubmit}/>*/
+  
+    //Create Account
+  
+    //User Profile
+      // <UserProfile />
+  
+    //My Bookings
+  
+    //New Post
+  
+    //Search Results
+  
+    //Individual Posting
+  
+    /*Leave a Review*/
+
+
   return (
       <div>
-        {/* <LoginPage 
-          inputs={inputs}
-          handleInputChange={handleInputChange}
-          handleSubmit={handleSubmit}/> */}
         <NavBar dot={true}/>
       </div>
     );
   
 }
+
+
+
